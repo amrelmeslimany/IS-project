@@ -1,5 +1,5 @@
 <?php
-$dsn    = 'mysql:host=localhost;dbname=student';
+$dsn    = 'mysql:host=localhost;dbname=students';
 $user   = 'root';
 $pass   = '';
 $option = array(
