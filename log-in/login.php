@@ -39,7 +39,7 @@
                 <div class="fxt-transformY-50 fxt-transition-delay-1">
                     <p>Login into your account</p>
                 </div>
-                <form method="POST">
+                <form method="POST" action="login-process.php">
                     <div class="form-group"> 
                         <div class="fxt-transformY-50 fxt-transition-delay-2">                                              
                             <input type="email" id="email" class="form-control" name="email" placeholder="Email" required="required">
