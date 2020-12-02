@@ -25,7 +25,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-4">   
-            <div class="pic-user"><a class="username-img-text" href="profile.html"><img class="img-fluid rounded-circle mr-2" src="https://w7.pngwing.com/pngs/980/886/png-transparent-male-portrait-avatar-computer-icons-icon-design-avatar-flat-face-icon-people-head-cartoon-thumbnail.png" alt="avataruser"><small class="username-text">Username            </small></a></div>
+            <div class="pic-user"><a class="username-img-text" href="profile.php"><img class="img-fluid rounded-circle mr-2" src="https://w7.pngwing.com/pngs/980/886/png-transparent-male-portrait-avatar-computer-icons-icon-design-avatar-flat-face-icon-people-head-cartoon-thumbnail.png" alt="avataruser"><small class="username-text">Username            </small></a></div>
           </div>
           <div class="col-4"><img class="text-center ml-auto mr-auto d-block" src="../assets/logomain.png" width="30px" height="30px"></div>
           <div class="col-4">
@@ -35,13 +35,13 @@
       </div>
     </nav>
     <main class="links-self"><i class="fas fa-times close-navbar"></i>
-      <div class="catch-them"><a class="logo-link" href="profile.html"><img class="logo-link" src="../assets/logomain.png" alt="hackrm"></a>
+      <div class="catch-them"><a class="logo-link" href="profile.php"><img class="logo-link" src="../assets/logomain.png" alt="hackrm"></a>
         <h2 class="head-links">Hakr <strong>M</strong></h2>
         <ul class="outer-links list-unstyled">
-          <li><a class="link-item" href="profile.html">profile</a></li>
-          <li><a class="link-item" href="register.html">register</a></li>
-          <li><a class="link-item" href="current-term.html">current-term</a></li>
-          <li><a class="link-item" href="history.html">history</a></li>
+          <li><a class="link-item" href="profile.php">profile</a></li>
+          <li><a class="link-item" href="register.php">register</a></li>
+          <li><a class="link-item" href="current-term.php">current-term</a></li>
+          <li><a class="link-item" href="history.php">history</a></li>
         </ul>
       </div><img class="tringle" src="../assets/decorations/tri-01.svg">
     </main>
@@ -411,7 +411,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="buttons mb-4 clearfix"><a class="btn current-pg float-right" href="current-term.html"><i class="fas fa-list mr-2"></i><span>Current Term</span></a></div>
+            <div class="buttons mb-4 clearfix"><a class="btn current-pg float-right" href="current-term.php"><i class="fas fa-list mr-2"></i><span>Current Term</span></a></div>
           </div>
         </div>
         <div class="col-md-3">

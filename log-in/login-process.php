@@ -1,14 +1,14 @@
 <?php
-include 'function/contact DB.php';
+include '../function/contact DB.php';
 if($_SERVER['REQUEST_METHOD']=='POST'){
     $email = $_POST['email'];
     $password = $_POST['password'];
     $hashpass = sha1($password);
 
     $stmt = $con->prepare("SELECT
-                          username,email,Password,UserID
+                          username,email,Password
                            FROM
-                            users
+                            students
                            WHERE
                              email = ?
                            AND
@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     if($count > 0){
         $_SESSION['username'] = $row['username'];
         $_SESSION['ID'] = $row['UserID'];
-        header('Location:dashboard.php');
+        header('Location:../student/view/profile.php');
         exit();
 
     }

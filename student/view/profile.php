@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-4">
                     <div class="pic-user">
-                        <a class="username-img-text" href="profile.html"><img class="img-fluid rounded-circle mr-2" src="https://w7.pngwing.com/pngs/980/886/png-transparent-male-portrait-avatar-computer-icons-icon-design-avatar-flat-face-icon-people-head-cartoon-thumbnail.png" alt="avataruser">
+                        <a class="username-img-text" href="profile.php"><img class="img-fluid rounded-circle mr-2" src="https://w7.pngwing.com/pngs/980/886/png-transparent-male-portrait-avatar-computer-icons-icon-design-avatar-flat-face-icon-people-head-cartoon-thumbnail.png" alt="avataruser">
                             <small class="username-text">Username </small>
                         </a>
                     </div>
@@ -42,13 +42,13 @@
     </nav>
     <main class="links-self"><i class="fas fa-times close-navbar"></i>
         <div class="catch-them">
-            <a class="logo-link" href="profile.html"><img class="logo-link" src="../assets/logomain.png" alt="hackrm"></a>
+            <a class="logo-link" href="profile.php"><img class="logo-link" src="../assets/logomain.png" alt="hackrm"></a>
             <h2 class="head-links">Hakr <strong>M</strong></h2>
             <ul class="outer-links list-unstyled">
-                <li><a class="link-item" href="profile.html">profile</a></li>
-                <li><a class="link-item" href="register.html">register</a></li>
-                <li><a class="link-item" href="current-term.html">current-term</a></li>
-                <li><a class="link-item" href="history.html">history</a></li>
+                <li><a class="link-item" href="profile.php">profile</a></li>
+                <li><a class="link-item" href="register.php">register</a></li>
+                <li><a class="link-item" href="current-term.php">current-term</a></li>
+                <li><a class="link-item" href="history.php">history</a></li>
             </ul>
         </div><img class="tringle" src="../assets/decorations/tri-01.svg">
     </main>
@@ -86,7 +86,7 @@
                                 <label for="password"><i class="fas fa-lock mr-1"></i> Change Password</label>
                                 <input class="form-control" type="password" name="password" minlength="8">
                             </div>
-                            <button class="btn submit clearfix"><i class="fas fa-paper-plane mr-2"></i><span>Save Changes</span></button><a class="btn regist-pg float-right" href="register.html"><i class="fas fa-file-medical mr-2"></i><span>Register</span></a>
+                            <button class="btn submit clearfix"><i class="fas fa-paper-plane mr-2"></i><span>Save Changes</span></button><a class="btn regist-pg float-right" href="register.php"><i class="fas fa-file-medical mr-2"></i><span>Register</span></a>
                         </form>
                     </div>
                 </div>

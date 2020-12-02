@@ -21,8 +21,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc9f995-7c3a-48eb-b467-7a0dd6887111" name="Default Changelist" comment="commit 3">
-      <change afterPath="$PROJECT_DIR$/log-in/login-process.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-in/login-process.php" beforeDir="false" afterPath="$PROJECT_DIR$/log-in/login-process.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/view/current-term.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/view/current-term.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/view/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/view/history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/view/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/view/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/view/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/view/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606923520088</updated>
-      <workItem from="1606923530034" duration="2569000" />
+      <workItem from="1606923530034" duration="3830000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="commit 2">
       <created>1606924196649</created>
@@ -69,7 +73,25 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٠٢" />
       <updated>1606925723212</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL؜٠٠٠٠٣" summary="commit 3">
+      <created>1606926171389</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٣" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٣" />
+      <updated>1606926171389</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠٤" summary="commit 3">
+      <created>1606926223190</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٤" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٤" />
+      <updated>1606926223190</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠٥" summary="commit 3">
+      <created>1606926534552</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٥" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٥" />
+      <updated>1606926534552</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,9 +118,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1606925818027" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1606925738021">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1606926540188">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606925738021" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606926540188" />
   </component>
 </project>
