@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     if($count > 0){
         $_SESSION['username'] = $row['username'];
         $_SESSION['ID'] = $row['UserID'];
-        header('Location:../student/view/profile.php');
+        header('Location:../student/profile.php');
         exit();
 
     }

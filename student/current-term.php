@@ -12,12 +12,12 @@
     <meta name="msapplication-navbutton-color" content="#313131">
     <meta name="apple-mobile-web-app-status-bar-style" content="#313131">
     <title>HAKR M - Current-Term</title>
-    <link rel="shortcut icon" href="../assets/fivicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="../assets/fivicon.png">
-    <link rel="stylesheet" href="../css/libs/all.min.css">
+    <link rel="shortcut icon" href="assets/fivicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/fivicon.png">
+    <link rel="stylesheet" href="css/libs/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&amp;amp;family=Oswald:wght@500;700&amp;amp;family=Roboto:wght@500&amp;amp;display=swap'" rel="stylesheet">
-    <link rel="stylesheet" href="../css/libs/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/libs/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- navbar-->
@@ -27,7 +27,7 @@
           <div class="col-4">   
             <div class="pic-user"><a class="username-img-text" href="profile.php"><img class="img-fluid rounded-circle mr-2" src="https://w7.pngwing.com/pngs/980/886/png-transparent-male-portrait-avatar-computer-icons-icon-design-avatar-flat-face-icon-people-head-cartoon-thumbnail.png" alt="avataruser"><small class="username-text">Username            </small></a></div>
           </div>
-          <div class="col-4"><img class="text-center ml-auto mr-auto d-block" src="../assets/logomain.png" width="30px" height="30px"></div>
+          <div class="col-4"><img class="text-center ml-auto mr-auto d-block" src="assets/logomain.png" width="30px" height="30px"></div>
           <div class="col-4">
             <div class="list-links-bar text-right"><i class="fas fa-bars"></i></div>
           </div>
@@ -35,7 +35,7 @@
       </div>
     </nav>
     <main class="links-self"><i class="fas fa-times close-navbar"></i>
-      <div class="catch-them"><a class="logo-link" href="profile.php"><img class="logo-link" src="../assets/logomain.png" alt="hackrm"></a>
+      <div class="catch-them"><a class="logo-link" href="profile.php"><img class="logo-link" src="assets/logomain.png" alt="hackrm"></a>
         <h2 class="head-links">Hakr <strong>M</strong></h2>
         <ul class="outer-links list-unstyled">
           <li><a class="link-item" href="profile.php">profile</a></li>
@@ -44,7 +44,7 @@
           <li><a class="link-item" href="history.php">history</a></li>
             <li><a class="link-item" href="logout.php">logout</a></li>
         </ul>
-      </div><img class="tringle" src="../assets/decorations/tri-01.svg">
+      </div><img class="tringle" src="assets/decorations/tri-01.svg">
     </main>
     <!-- Image Upload -->
     <section class="page-content">
@@ -128,16 +128,16 @@
                 </li>
               </ul>
               <div class="social-icons"><i class="fab fa-facebook mr-2"></i><i class="fab fa-instagram mr-2"></i><i class="fab fa-twitter mr-2"></i></div>
-            </div><img src="../assets/decorations/tri-01.svg" id="tringle-1">
+            </div><img src="assets/decorations/tri-01.svg" id="tringle-1">
           </div>
         </div>
       </div>
     </section>
     <!-- Scripts-->
-    <script src="../js/libs/jquery-3.5.1.min.js"></script>
-    <script src="../js/libs/bootstrap.min.js"></script>
-    <script src="../js/libs/bootstrap-checkbox.min.js"></script>
+    <script src="js/libs/jquery-3.5.1.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/bootstrap-checkbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
