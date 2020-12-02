@@ -29,7 +29,7 @@
         </div>
         <div id="main">
             <header class="main-header">
-                <a href="index.html" class="ajax logo-holder"><img src="images/LOGOUP.png" alt=""></a>
+                <a href="index.php" class="ajax logo-holder"><img src="images/LOGOUP.png" alt=""></a>
                 <div class="nav-button but-hol">
                     <span  class="ncs"></span>
                     <span class="nos"></span>
@@ -41,7 +41,7 @@
                         <li><span>01. Call </span> <a href="tel:+201128120374">+201128120374</a></li>
                         <li><span>02. Write </span> <a href="mailto:name@gmail.com">hakrm@gmail.com</a></li>
                     </ul>
-                    <a href="contacts.html" class="ajax contacts-btn">Get in touch</a>
+                    <a href="contacts.php" class="ajax contacts-btn">Get in touch</a>
                 </div>
             </header>
             <aside class="left-header">
@@ -65,10 +65,10 @@
                         <div class="nav-container fl-wrap">
                             <nav class="nav-inner" id="menu">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contacts.html" class="act-link">Contacts</a></li>
-                                    <li><a href="log-in/login.html">log in</a></li>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="about.php">About</a></li>
+                                    <li><a href="contacts.php" class="act-link">Contacts</a></li>
+                                    <li><a href="log-in/login.php">log in</a></li>
                                 </ul>
                             </nav>
                         </div>

@@ -29,10 +29,10 @@
         <div id="particles-js"></div>
         <div class="fxt-content">
             <div class="fxt-header">
-                <a href="login.html" class="fxt-logo"><img src="img/LOGOUP.png" alt="Logo"></a> 
+                <a href="login.php" class="fxt-logo"><img src="img/LOGOUP.png" alt="Logo"></a>
                 <ul class="fxt-switcher-wrap">
-                    <li><a href="login.html" class="switcher-text active">Login</a></li>
-                    <li><a href="forgot-password.html" class="switcher-text">Forgot Password</a></li>
+                    <li><a href="login.php" class="switcher-text active">Login</a></li>
+                    <li><a href="forgot-password.php" class="switcher-text">Forgot Password</a></li>
                 </ul>
             </div>                            
             <div class="fxt-form"> 

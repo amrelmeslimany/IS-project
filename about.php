@@ -29,7 +29,7 @@
         </div>
         <div id="main">
             <header class="main-header">
-                <a href="index.html" class="ajax logo-holder"><img src="images/LOGOUP.png" alt=""></a>
+                <a href="index.php" class="ajax logo-holder"><img src="images/LOGOUP.png" alt=""></a>
                 <div class="nav-button but-hol">
                     <span  class="ncs"></span>
                     <span class="nos"></span>
@@ -41,7 +41,7 @@
                         <li><span>01. Call </span> <a href="tel:+201128120374">+201128120374</a></li>
                         <li><span>02. Write </span> <a href="mailto:name@gmail.com">hakrm@gmail.com</a></li>
                     </ul>
-                    <a href="contacts.html" class="ajax contacts-btn">Get in touch</a>
+                    <a href="contacts.php" class="ajax contacts-btn">Get in touch</a>
                 </div>
             </header>
             <aside class="left-header">
@@ -65,10 +65,10 @@
                         <div class="nav-container fl-wrap">
                             <nav class="nav-inner" id="menu">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html" class="act-link">About</a></li>
-                                    <li><a href="contacts.html">Contacts</a></li>
-                                    <li><a href="log-in/login.html">log in</a></li>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="about.php" class="act-link">About</a></li>
+                                    <li><a href="contacts.php">Contacts</a></li>
+                                    <li><a href="log-in/login.php">log in</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -163,7 +163,7 @@
                                                 <h2>Lorem ipsum dolor sit amet, consectetur <br><span> Nulla posuere</span>  projects</h2>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat fermentum.</p>
                                                 <p> Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa.</p>
-                                                <a href="contacts.html" class="btn ajax  color-bg  fl-btn"><span>Contact Us</span></a>
+                                                <a href="contacts.php" class="btn ajax  color-bg  fl-btn"><span>Contact Us</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -275,7 +275,7 @@
                                     </div>                                      
                                     <div class="srv-link-text fl-wrap">
                                         <h4>Do you want more information ? Visit Our contacts page :  </h4>
-                                        <a href="contacts.html" class="btn ajax color-bg  fl-btn"><span>Contacts</span></a>
+                                        <a href="contacts.php" class="btn ajax color-bg  fl-btn"><span>Contacts</span></a>
                                     </div>
                                 </div>
                                 <div class="section-number"> <span>0</span>2. </div>
