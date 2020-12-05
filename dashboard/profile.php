@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['ID'])){
+include '../function/profileGetData.php';
+$row=getDataFromStudentTable($_SESSION['ID'])
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,8 +56,6 @@
                 <li><a class="link-item" href="register.php">register</a></li>
                 <li><a class="link-item" href="current-term.php">current-term</a></li>
                 <li><a class="link-item" href="history.php">history</a></li>
-                <li><a class="link-item" href="logout.php">logout</a></li>
-
             </ul>
         </div><img class="tringle" src="assets/decorations/tri-01.svg">
     </main>
@@ -77,7 +82,31 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="username"><i class="fas fa-user mr-1"></i> Username</label>
-                                    <input class="form-control" type="text" name="username">
+                                    <input class="form-control" type="text" name="username" readonly value="Ex: username">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="id"><i class="fas fa-id-card-alt mr-1"></i>Id</label>
+                                    <input class="form-control" type="text" name="id" readonly value="Ex: 10103">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="year"><i class="fas fa-clock mr-1"></i>Year</label>
+                                    <input class="form-control" type="text" name="year" readonly value="Ex: 2020">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="gpa"><i class="fas fa-calculator mr-1"></i>GPA</label>
+                                    <input class="form-control" type="text" name="gpa" readonly value="Ex: 3.0">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="recH"><i class="fas fa-hourglass mr-1"></i>Recorded Hours</label>
+                                    <input class="form-control" type="text" name="recH" readonly value="Ex: 18H">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="dep"><i class="fas fa-list-alt mr-1"></i>Department</label>
+                                    <input class="form-control" type="text" name="dep" readonly value="Ex: IT">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="segSub"><i class="fas fa-frown mr-1"></i>Segment Subject</label>
+                                    <input class="form-control" name="segSub" readonly value="CS201,PM320,TW323">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="email"><i class="fas fa-envelope mr-1"></i> Email</label>
@@ -86,6 +115,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="password"><i class="fas fa-lock mr-1"></i> Change Password</label>
+                                <input type="hidden" name="oldPass" value="<?php echo $row['Password']; ?>">
                                 <input class="form-control" type="password" name="password" minlength="8">
                             </div>
                             <button class="btn submit clearfix"><i class="fas fa-paper-plane mr-2"></i><span>Save Changes</span></button><a class="btn regist-pg float-right" href="register.php"><i class="fas fa-file-medical mr-2"></i><span>Register</span></a>

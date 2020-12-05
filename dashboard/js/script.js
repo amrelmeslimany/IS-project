@@ -38,43 +38,10 @@ $(function() {
         cl.preventDefault();
         let formdataSer = $(this).serialize(),
             formdataInputs = {
-                username: $(this.username).val(),
                 password: $(this.password).val()
             };
-        if (formdataInputs.username != '' || formdataInputs.password != '') {
-            if (formdataInputs.username) {
-                if (formdataInputs.username.length <= 2) {
-                    $(this.username).removeClass('is-valid');
-                    $(this.username).addClass('is-invalid');
-                    $(this.username).after(`<div class="invalid-feedback">Username Not Less Than 2 Letters</div>`);
-                    $(this.username).nextAll('.invalid-feedback,.valid-feedback').delay(2000).hide(200, function() {
-                        $(this).remove();
-                    });
-                } else if (!(/^[a-zA-Z]/g.test(formdataInputs.username))) {
-                    $(this.username).removeClass('is-valid');
-                    $(this.username).addClass('is-invalid');
-                    $(this.username).after(`<div class="invalid-feedback">Username Must Start Letters</div>`);
-                    $(this.username).nextAll('.invalid-feedback,.valid-feedback').delay(2000).hide(200, function() {
-                        $(this).remove();
-                    });
-                } else {
-                    $(this.username).removeClass('is-invalid');
-                    $(this.username).addClass('is-valid');
-                    $(this.username).after(`<div class="valid-feedback">Good Username</div>`);
-                    $(this.username).nextAll('.invalid-feedback,.valid-feedback').delay(2000).hide(200, function() {
-                        $(this).remove();
-                    });
-                    $('.form-profile').prepend('<div class="alert alert-success">Success Update Username</div>');
-                    $('.form-profile').find(".alert").delay(2000).slideUp(100);
-                    console.log(formdataInputs.username)
-                    setTimeout(() => {
-                        $(this.username).removeClass('is-valid');
-                        $(this.username).val('')
-                    }, 2000)
-                }
-            }
             // For Password
-            if (formdataInputs.password) {
+            if (formdataInputs.password || formdataInputs.password != "") {
                 if (!(/[A-Z]/g).test(formdataInputs.password)) {
                     $(this.password).removeClass('is-valid');
                     $(this.password).addClass('is-invalid');
@@ -111,10 +78,9 @@ $(function() {
                         $(this.password).val('')
                     }, 2000)
                 }
-            }
         } else {
-            $('.form-profile').prepend('<div class="alert alert-danger">Empty Fields</div>');
-            $('.form-profile').find(".alert").delay(2000).slideUp(100)
+            $('.form-profile').prepend(`<div class="alert alert-danger">Empty Fields</div>`);
+            $('.form-profile').find(".alert").delay(2000).slideUp(100);
         }
     });
     // Section Registeration , Choose Subject
