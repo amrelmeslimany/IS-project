@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(isset($_SESSION['ID'])){
+include '../function/registerGetData.php';
+$level=getLevel($_SESSION['ID']);
+$rows=getData($level);
+foreach ($rows as $row) $row["name"];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,51 +71,17 @@
                   </tr>
                 </thead>
                 <tbody class="body-rable-rgs">
+                <?php  foreach ($rows as $row) ?>
                   <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>6H</td>
-                    <td>CS</td>
+                    <td class="text-uppercase"><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['code']; ?></td>
+                    <td><?php echo $row['Credithours']; ?></td>
+                    <td><?php echo $row['codpart']; ?></td>
                     <td>
                       <input class="choose-subject" type="checkbox" value="false" name="subject-name">
                     </td>
                   </tr>
-                  <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>3H</td>
-                    <td>CS</td>
-                    <td>
-                      <input class="choose-subject" type="checkbox" value="false" name="subject-name">
-                    </td>
-                  </tr>
-                  <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>2H</td>
-                    <td>CS</td>
-                    <td>
-                      <input class="choose-subject" type="checkbox" value="false" name="subject-name">
-                    </td>
-                  </tr>
-                  <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>1.5H</td>
-                    <td>CS</td>
-                    <td>
-                      <input class="choose-subject" type="checkbox" value="false" name="subject-name">
-                    </td>
-                  </tr>
-                  <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>1.2H</td>
-                    <td>CS</td>
-                    <td>
-                      <input class="choose-subject" type="checkbox" value="false" name="subject-name">
-                    </td>
-                  </tr>
+                <?php } ?>
                 </tbody>
               </table>
             </div>
