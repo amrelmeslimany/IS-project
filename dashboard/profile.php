@@ -65,32 +65,33 @@ $row=getDataFromStudentTable($_SESSION['ID'])
             <div class="col-md-9">
                 <div class="container-fluid">
                     <h1 class="mt-4">Your Profile</h1><small class="text-center d-block header-profile">Edit Your Profile From This Page</small>
-                    <div class="change-img">
-                        <div class="avatar-upload">
-                            <div class="avatar-edit">
-                                <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
-                                <label for="imageUpload"></label>
-                            </div>
-                            <div class="avatar-preview">
-                                <div id="imagePreview" style="background-image: url(https://w7.pngwing.com/pngs/980/886/png-transparent-male-portrait-avatar-computer-icons-icon-design-avatar-flat-face-icon-people-head-cartoon-thumbnail.png);"></div>
-                            </div>
-                        </div>
-                        <h5 class="text-center mt-3">Username</h5>
-                    </div>
+
                     <div class="change-data-self mt-4 mb-4">
                         <form class="form-profile clearfix">
+                            <div class="change-img">
+                                <div class="avatar-upload">
+                                    <div class="avatar-edit">
+                                        <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                                        <label for="imageUpload"></label>
+                                    </div>
+                                    <div class="avatar-preview">
+                                        <div id="imagePreview" style="background-image: url(<?php echo $row['img']; ?>);"></div>
+                                    </div>
+                                </div>
+                                <h5 class="text-center mt-3"><?php echo $row['name']; ?></h5>
+                            </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="username"><i class="fas fa-user mr-1"></i> Username</label>
-                                    <input class="form-control" type="text" name="username" readonly value="Ex: username">
+                                    <input class="form-control" type="text" name="username" readonly value="<?php echo $row['name']; ?>">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="id"><i class="fas fa-id-card-alt mr-1"></i>Id</label>
-                                    <input class="form-control" type="text" name="id" readonly value="Ex: 10103">
+                                    <input class="form-control" type="text" name="id" readonly value="<?php echo $row['code']; ?>">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="year"><i class="fas fa-clock mr-1"></i>Year</label>
-                                    <input class="form-control" type="text" name="year" readonly value="Ex: 2020">
+                                    <input class="form-control" type="text" name="year" readonly value="<?php  echo date('Y') ?>">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="gpa"><i class="fas fa-calculator mr-1"></i>GPA</label>
@@ -98,11 +99,11 @@ $row=getDataFromStudentTable($_SESSION['ID'])
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="recH"><i class="fas fa-hourglass mr-1"></i>Recorded Hours</label>
-                                    <input class="form-control" type="text" name="recH" readonly value="Ex: 18H">
+                                    <input class="form-control" type="text" name="recH" readonly value="<?php echo $row['hours']; ?>">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="dep"><i class="fas fa-list-alt mr-1"></i>Department</label>
-                                    <input class="form-control" type="text" name="dep" readonly value="Ex: IT">
+                                    <input class="form-control" type="text" name="dep" readonly value="<?php echo $row['StdDpart']; ?>">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="segSub"><i class="fas fa-frown mr-1"></i>Segment Subject</label>
@@ -110,7 +111,7 @@ $row=getDataFromStudentTable($_SESSION['ID'])
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="email"><i class="fas fa-envelope mr-1"></i> Email</label>
-                                    <input class="form-control" type="text" name="email" readonly value="Ex: hakrm00455@edu.dmu.eg">
+                                    <input class="form-control" type="text" name="email" readonly value="<?php echo $row['email']; ?>">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -172,3 +173,6 @@ $row=getDataFromStudentTable($_SESSION['ID'])
 </body>
 
 </html>
+<?php
+}
+?>

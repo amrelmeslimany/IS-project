@@ -21,38 +21,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc9f995-7c3a-48eb-b467-7a0dd6887111" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/function/sendData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function/studentTabel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/contact DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/contactDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-in/login-process.php" beforeDir="false" afterPath="$PROJECT_DIR$/log-in/login-process.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/assets/decorations/book-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/assets/decorations/hat-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/assets/decorations/tri-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/assets/fivicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/assets/logomain.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/libs/all.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/libs/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/webfonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/webfonts/fa-brands-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/webfonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/webfonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/webfonts/fa-regular-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/webfonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/webfonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/webfonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/css/webfonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/current-term.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/history.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/js/libs/bootstrap-checkbox.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/js/libs/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/js/libs/jquery-3.5.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/profile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/profileGetData.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/profileGetData.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +37,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1l6hZx6dXRN8x1pNg9ys2X2ox1V" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -88,7 +62,7 @@
       <workItem from="1606923530034" duration="5849000" />
       <workItem from="1607025230624" duration="939000" />
       <workItem from="1607183273787" duration="2515000" />
-      <workItem from="1607188492434" duration="10318000" />
+      <workItem from="1607188492434" duration="12517000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="commit 2">
       <created>1606924196649</created>
@@ -138,7 +112,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٠٨" />
       <updated>1606929559331</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL؜٠٠٠٠٩" summary="commit 4">
+      <created>1607201099086</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٩" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٩" />
+      <updated>1607201099086</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,20 +137,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit 2" />
     <MESSAGE value="commit 3" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="commit 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="264" key="NewPhpFileDialog" timestamp="1607198431136">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1607198431136" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1606929562563">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1607201126906">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606929562563" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607201126906" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607198729397">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
