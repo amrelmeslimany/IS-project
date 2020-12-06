@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $hashpass = sha1($password);
 
     $stmt = $con->prepare("SELECT 
-                          id,username,email,Password
+                          id,code,email,Password
                            FROM
                             students
                            WHERE

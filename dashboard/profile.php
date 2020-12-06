@@ -2,6 +2,7 @@
 session_start();
 if(isset($_SESSION['ID'])){
 include '../function/profileGetData.php';
+include '../function/gpaAndScore.php';
 $row=getDataFromStudentTable($_SESSION['ID'])
 ?>
 
@@ -95,7 +96,7 @@ $row=getDataFromStudentTable($_SESSION['ID'])
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="gpa"><i class="fas fa-calculator mr-1"></i>GPA</label>
-                                    <input class="form-control" type="text" name="gpa" readonly value="Ex: 3.0">
+                                    <input class="form-control" type="text" name="gpa" readonly value="<?php echo GPA($_SESSION['ID'])?>">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="recH"><i class="fas fa-hourglass mr-1"></i>Recorded Hours</label>

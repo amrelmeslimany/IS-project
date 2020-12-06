@@ -88,16 +88,7 @@ $(function() {
         baseGroupCls: 'btn-group radio-subject',
         baseCls: 'btn btn-radio p-0 pr-1 pl-1'
     });
-    choose_subject.on('change', function() {
 
-        if ($(this).is(":checked")) {
-            let name_subject = $(this).parent().parent().find('td:first-child').text();
-            $(this).attr('value', 'true');
-            console.log(name_subject)
-        } else {
-            $(this).attr('value', 'false');
-        }
-    });
     // Section Current Page
     btn_print.on("click", () => {
         window.print();

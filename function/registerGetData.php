@@ -1,6 +1,4 @@
 <?php
-include 'contactDB.php';
-
 function getData($level)
 {
     include 'contactDB.php';
@@ -13,8 +11,10 @@ function getData($level)
                                course.level = ?
                            ");
     $stmt->execute(array($level));
-    return $stmt->fetch();
+    return $stmt->fetchAll();
 }
+
+
 
 function getLevel($id){
     include 'contactDB.php';

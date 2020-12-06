@@ -4,7 +4,6 @@ if(isset($_SESSION['ID'])){
 include '../function/registerGetData.php';
 $level=getLevel($_SESSION['ID']);
 $rows=getData($level);
-foreach ($rows as $row) $row["name"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,73 +53,93 @@ foreach ($rows as $row) $row["name"];
       </div><img class="tringle" src="assets/decorations/tri-01.svg">
     </main>
     <!-- Image Upload -->
+
     <section class="page-content">
-      <div class="row no-gutters">
-        <div class="col-md-9">
-          <div class="container-fluid">
-            <h1 class="text-center mt-4 mb-1">Registeration</h1><small class="text-center d-block mb-3 regist-pr">Select Yes If You Will Choose This Subject</small>
-            <div class="table-responsive table-register mb-2">
-              <table class="table">
-                <thead class="thead-1">
-                  <tr>
-                    <th>Subject</th>
-                    <th>Code</th>
-                    <th>Houres</th>
-                    <th>Department</th>
-                    <th>Choosen</th>
-                  </tr>
-                </thead>
-                <tbody class="body-rable-rgs">
-                <?php  foreach ($rows as $row) ?>
-                  <tr> 
-                    <td class="text-uppercase"><?php echo $row['name']; ?></td>
-                    <td><?php echo $row['code']; ?></td>
-                    <td><?php echo $row['Credithours']; ?></td>
-                    <td><?php echo $row['codpart']; ?></td>
-                    <td>
-                      <input class="choose-subject" type="checkbox" value="false" name="subject-name">
-                    </td>
-                  </tr>
-                <?php } ?>
-                </tbody>
-              </table>
+        <form action="../function/registerSetData.php" method="post">
+          <div class="row no-gutters">
+            <div class="col-md-9">
+              <div class="container-fluid">
+                <h1 class="text-center mt-4 mb-1">Registeration</h1><small class="text-center d-block mb-3 regist-pr">Select Yes If You Will Choose This Subject</small>
+                <div class="table-responsive table-register mb-2">
+                  <table class="table">
+                    <thead class="thead-1">
+                      <tr>
+                        <th>Subject</th>
+                        <th>Code</th>
+                        <th>Houres</th>
+                        <th>Department</th>
+                        <th>Choosen</th>
+                      </tr>
+                    </thead>
+                    <tbody class="body-rable-rgs">
+                    <?php  foreach ($rows as $row) {
+                      echo "<tr>" ;
+                      echo "<td class='text-uppercase'>";
+                      echo $row['name'];
+                      echo "</td>";
+                      echo "<td class='text-uppercase'>";
+                      echo $row['code'];
+                      echo "</td>";
+                      echo "<td class='text-uppercase'>";
+                      echo $row['Credithours'];
+                      echo " </td>";
+                      echo "<td class='text-uppercase'>";
+                      echo $row['codpart'];
+                      echo " </td>";
+                      if (date('m') == 9 |date('m') == 10 |date('m') == 1 |date('m') == 12) {
+                          echo "<td>
+                          <input class='choose-subject' type='checkbox' value='" . $row['code'] . "' name='select[]'>
+                        </td>
+                      </tr>";
+                      }else{
+                          echo "<td>
+                                    <h6 class='text-center'>can't register now</h6>
+                                </td>
+                      </tr>";
+                      }
+                     }
+
+                      ?>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="buttons mb-4 clearfix">
+                  <button class="btn submit-subjects" type="submit"><i class="fas fa-paper-plane mr-2"></i><span>Submit</span></button><a class="btn current-pg float-right" href="current-term.php"><i class="fas fa-list mr-2"></i><span>Current Term</span></a>
+                </div>
+              </div>
             </div>
-            <div class="buttons mb-4 clearfix">
-              <button class="btn submit-subjects"><i class="fas fa-paper-plane mr-2"></i><span>Submit</span></button><a class="btn current-pg float-right" href="current-term.php"><i class="fas fa-list mr-2"></i><span>Current Term</span></a>
+            <div class="col-md-3">
+              <div class="help-part text-center">
+                <div class="catch-them">
+                  <h3 class="mb-4">Helps</h3>
+                  <ul class="list-unstyled helps-self">
+                    <li class="bx-hp p-1">
+                      <h5 class="pt-2">Help 1</h5>
+                      <p>Here is the help paragraph</p>
+                    </li>
+                    <li class="bx-hp p-1">
+                      <h5 class="pt-2">Help 2</h5>
+                      <p>Here is the help paragraph</p>
+                    </li>
+                    <li class="bx-hp p-1">
+                      <h5 class="pt-2">Help 3</h5>
+                      <p>Here is the help paragraph</p>
+                    </li>
+                    <li class="bx-hp p-1">
+                      <h5 class="pt-2">Help 4</h5>
+                      <p>Here is the help paragraph</p>
+                    </li>
+                    <li class="bx-hp p-1">
+                      <h5 class="pt-2">Help 5</h5>
+                      <p>Here is the help paragraph</p>
+                    </li>
+                  </ul>
+                  <div class="social-icons"><i class="fab fa-facebook mr-2"></i><i class="fab fa-instagram mr-2"></i><i class="fab fa-twitter mr-2"></i></div>
+                </div><img src="assets/decorations/tri-01.svg" id="tringle-1">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="help-part text-center">
-            <div class="catch-them">
-              <h3 class="mb-4">Helps</h3>
-              <ul class="list-unstyled helps-self">
-                <li class="bx-hp p-1">
-                  <h5 class="pt-2">Help 1</h5>
-                  <p>Here is the help paragraph</p>
-                </li>
-                <li class="bx-hp p-1">
-                  <h5 class="pt-2">Help 2</h5>
-                  <p>Here is the help paragraph</p>
-                </li>
-                <li class="bx-hp p-1">
-                  <h5 class="pt-2">Help 3</h5>
-                  <p>Here is the help paragraph</p>
-                </li>
-                <li class="bx-hp p-1">
-                  <h5 class="pt-2">Help 4</h5>
-                  <p>Here is the help paragraph</p>
-                </li>
-                <li class="bx-hp p-1">
-                  <h5 class="pt-2">Help 5</h5>
-                  <p>Here is the help paragraph</p>
-                </li>
-              </ul>
-              <div class="social-icons"><i class="fab fa-facebook mr-2"></i><i class="fab fa-instagram mr-2"></i><i class="fab fa-twitter mr-2"></i></div>
-            </div><img src="assets/decorations/tri-01.svg" id="tringle-1">
-          </div>
-        </div>
-      </div>
+        </form>
     </section>
     <!-- Scripts-->
     <script src="js/libs/jquery-3.5.1.min.js"></script>
@@ -130,3 +149,6 @@ foreach ($rows as $row) $row["name"];
     <script src="js/script.js"></script>
   </body>
 </html>
+<?php
+}
+?>
