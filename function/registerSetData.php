@@ -2,15 +2,11 @@
 ob_start();
 session_start();
 include "contactDB.php";
+include "termAndYear.php";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $idStudent = $_SESSION["ID"];
-    $year=date('yy');
-    $term='';
-    if(date('m')==9|10){
-        $term="1st";
-    }elseif(date('m')==1|2){
-        $term="2nd";
-    }
+    $year=year();
+    $term=term();
     $subjects=$_POST['select'];
     foreach ($subjects as $subject) {
 
