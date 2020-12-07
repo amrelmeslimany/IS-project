@@ -69,20 +69,27 @@ if(isset($_SESSION['ID'])){
                                     <th>Code</th>
                                     <th>Houres</th>
                                     <th>Department</th>
+                                    <th>score</th>
                                     </tr>
                                      <tbody class="body-rable-rgs">
 ';
                         $rows=getCurrent($_SESSION['ID'],term1($j),$i);
                         foreach ($rows as $row){
+                            if ($row['score']==-1){
+                                continue;
+                            }
                             echo '
                                   <tr> 
                                     <td class="text-uppercase">'.$row['name'].'</td>
                                     <td>'.$row['code'].'</td>
                                     <td>'.$row['hours'].'</td>
                                     <td>'.$row['department'].'</td>
+                                     <td>'.$row['score'].'</td>
                                   </tr>';
                         }
-                        echo '</thead>';
+                        echo '</thead>
+                        </table>
+                        </div>';
                     }
                     }
 
@@ -446,9 +453,9 @@ if(isset($_SESSION['ID'])){
                     <td>1.2H</td>
                     <td>CS</td>
                   </tr>
-                </tbody>-->
+                </tbody>
               </table>
-            </div>
+            </div>-->
             <div class="buttons mb-4 clearfix"><a class="btn current-pg float-right" href="current-term.php"><i class="fas fa-list mr-2"></i><span>Current Term</span></a></div>
           </div>
         </div>

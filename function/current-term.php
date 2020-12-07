@@ -3,7 +3,7 @@
 function getCurrent($studentId,$term,$year){
     include 'contactDB.php';
     $stmt = $con->prepare("SELECT
-                                register.`id_course` AS 'code',course.name,
+                                register.`id_course` AS 'code',course.name,register.score,
                                 course.Credithours AS 'hours',department.name as 'department'
                             FROM (
                             register
@@ -17,8 +17,7 @@ function getCurrent($studentId,$term,$year){
                                 register.year=?
                                 AND
                                 register.id_student=?
-                                AND
-                                register.score=-1                       
+                                                   
                             ");
     $stmt->execute(array($term,$year,$studentId));
     return $stmt->fetchAll();

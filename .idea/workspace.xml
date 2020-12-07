@@ -22,6 +22,7 @@
   <component name="ChangeListManager">
     <list default="true" id="acc9f995-7c3a-48eb-b467-7a0dd6887111" name="Default Changelist" comment="commit">
       <change beforePath="$PROJECT_DIR$/dashboard/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/current-term.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/current-term.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
       <workItem from="1607188492434" duration="21032000" />
       <workItem from="1607244292859" duration="17671000" />
       <workItem from="1607335456405" duration="11178000" />
-      <workItem from="1607356436951" duration="5319000" />
+      <workItem from="1607356436951" duration="5643000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="commit 2">
       <created>1606924196649</created>
@@ -156,7 +157,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠١٥" />
       <updated>1607361637906</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL؜٠٠٠١٦" summary="commit 6">
+      <created>1607361904461</created>
+      <option name="number" value="LOCAL؜٠٠٠١٦" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٦" />
+      <updated>1607361904461</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
