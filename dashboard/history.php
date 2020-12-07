@@ -82,7 +82,7 @@ if(isset($_SESSION['ID'])){
                                     <td>'.$row['department'].'</td>
                                   </tr>';
                         }
-
+                        echo '</thead>';
                     }
                     }
 
