@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['ID'])){
+include '../function/current-term.php';
+include '../function/termAndYear.php';
+$rows=getCurrent($_SESSION['ID'],term(),year());
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -62,36 +69,14 @@
                   </tr>
                 </thead>
                 <tbody class="body-rable-rgs">
+                <?php foreach ($rows as $row ){ ?>
                   <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>6H</td>
-                    <td>CS</td>
+                    <td class="text-uppercase"><?php echo $row['name'];?></td>
+                    <td><?php echo $row['code'];?></td>
+                    <td><?php echo $row['hours'];?></td>
+                    <td><?php echo $row['department'];?></td>
                   </tr>
-                  <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>3H</td>
-                    <td>CS</td>
-                  </tr>
-                  <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>2H</td>
-                    <td>CS</td>
-                  </tr>
-                  <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>1.5H</td>
-                    <td>CS</td>
-                  </tr>
-                  <tr> 
-                    <td class="text-uppercase">oop</td>
-                    <td>CS103</td>
-                    <td>1.2H</td>
-                    <td>CS</td>
-                  </tr>
+                <?php } ?>
                 </tbody>
               </table>
             </div>
@@ -140,3 +125,6 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+<?php
+}
+?>

@@ -1,11 +1,10 @@
 <?php
 
-function getCurrent($studentId){
-    include 'termAndYear.php';
+function getCurrent($studentId,$term,$year){
     include 'contactDB.php';
     $stmt = $con->prepare("SELECT
                                 register.`id_course` AS 'code',course.name,
-                                course.Credithours AS 'hours',department.name
+                                course.Credithours AS 'hours',department.name as 'department'
                             FROM (
                             register
                                  INNER JOIN course 
@@ -21,6 +20,6 @@ function getCurrent($studentId){
                                 AND
                                 register.score=-1                       
                             ");
-    $stmt->execute(array(term(),year(),$studentId));
+    $stmt->execute(array($term,$year,$studentId));
     return $stmt->fetchAll();
 }

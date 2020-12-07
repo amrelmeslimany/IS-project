@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['ID'])){
+    include '../function/current-term.php';
+    include '../function/history.php';
+    include '../function/termAndYear.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -51,7 +58,38 @@
         <div class="col-md-9">
           <div class="container-fluid">
             <h1 class="text-center mt-4 mb-1 h-his">Subject In All Terms</h1><small class="text-center d-block mb-3 history-pr">You Will Find Here All Subjects In All Terms</small>
-            <h5 class="text-center mb-2">First Term In Level 1</h5>
+              <?php for ($i=since($_SESSION['ID']);$i<=year();$i++){
+                    for ($j=1;$j<=2;$j++){
+                       echo '<h5 class="text-center mb-2">'.$j.' Term In '.$i.'</h5>
+                                <div class="table-responsive table-history mb-2">
+                                <table class="table">
+                                <thead class="thead-1">
+                                    <tr>
+                                    <th>Subject</th>
+                                    <th>Code</th>
+                                    <th>Houres</th>
+                                    <th>Department</th>
+                                    </tr>
+                                     <tbody class="body-rable-rgs">
+';
+                        $rows=getCurrent($_SESSION['ID'],term1($j),$i);
+                        foreach ($rows as $row){
+                            echo '
+                                  <tr> 
+                                    <td class="text-uppercase">'.$row['name'].'</td>
+                                    <td>'.$row['code'].'</td>
+                                    <td>'.$row['hours'].'</td>
+                                    <td>'.$row['department'].'</td>
+                                  </tr>';
+                        }
+
+                    }
+                    }
+
+
+                ?>
+
+              <!-- <h5 class="text-center mb-2">First Term In Level 1</h5>
             <div class="table-responsive table-history mb-2">
               <table class="table">
                 <thead class="thead-1">
@@ -408,7 +446,7 @@
                     <td>1.2H</td>
                     <td>CS</td>
                   </tr>
-                </tbody>
+                </tbody>-->
               </table>
             </div>
             <div class="buttons mb-4 clearfix"><a class="btn current-pg float-right" href="current-term.php"><i class="fas fa-list mr-2"></i><span>Current Term</span></a></div>
@@ -454,3 +492,4 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+<?php } ?>

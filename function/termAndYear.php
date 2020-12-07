@@ -17,3 +17,13 @@ function year(){
     }
     return $year;
 }
+function term1($t){
+    if($t==1){
+        $term='1st';
+    }elseif ($t==2){
+        $term='2nd';
+    }else{
+        $term='summer';
+    }
+    return $term;
+}

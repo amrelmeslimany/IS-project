@@ -21,8 +21,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc9f995-7c3a-48eb-b467-7a0dd6887111" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/function/current-term.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function/history.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/current-term.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/current-term.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/current-term.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/current-term.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,7 +67,8 @@
       <workItem from="1607183273787" duration="2515000" />
       <workItem from="1607188492434" duration="21032000" />
       <workItem from="1607244292859" duration="17671000" />
-      <workItem from="1607335456405" duration="4243000" />
+      <workItem from="1607335456405" duration="11178000" />
+      <workItem from="1607356436951" duration="5016000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="commit 2">
       <created>1606924196649</created>
@@ -143,7 +148,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠١٣" />
       <updated>1607284469010</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL؜٠٠٠١٤" summary="commit 5">
+      <created>1607346826060</created>
+      <option name="number" value="LOCAL؜٠٠٠١٤" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٤" />
+      <updated>1607346826060</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,20 +179,35 @@
     <MESSAGE value="commit" />
     <MESSAGE value="commit 4" />
     <MESSAGE value="commit5" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit5" />
+    <MESSAGE value="commit 5" />
+    <MESSAGE value="commet6" />
+    <MESSAGE value="commit 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 6" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1607336919141">
+    <state x="292" y="119" key="FileChooserDialogImpl" timestamp="1607361564324">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="292" y="119" key="FileChooserDialogImpl/0.0.1024.728@0.0.1024.728" timestamp="1607361564324" />
+    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1607348843274">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1607336919141" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1607284474762">
+    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1607348843274" />
+    <state x="13" y="9" key="SettingsEditor" timestamp="1607361566399">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="13" y="9" key="SettingsEditor/0.0.1024.728@0.0.1024.728" timestamp="1607361566399" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1607346834134">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607284474762" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607346834134" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607198729397">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1607198729397" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1607351612824">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607351612824" />
   </component>
 </project>
