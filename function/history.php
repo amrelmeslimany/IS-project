@@ -6,9 +6,8 @@ function since($id){
                             FROM
                                 students
                             where 
-                                code=?
+                                id=?
                            ");
     $stmt->execute(array($id));
     return $row = $stmt -> fetch();
 }
-print_r(since(1));

@@ -21,7 +21,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc9f995-7c3a-48eb-b467-7a0dd6887111" name="Default Changelist" comment="commit">
+      <change beforePath="$PROJECT_DIR$/dashboard/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/history.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function/contactDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/contactDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/history.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
       <workItem from="1607335456405" duration="11178000" />
       <workItem from="1607356436951" duration="5643000" />
       <workItem from="1607412610470" duration="1997000" />
-      <workItem from="1607416018681" duration="9804000" />
+      <workItem from="1607416018681" duration="10131000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="commit 2">
       <created>1606924196649</created>
@@ -194,7 +196,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٢١" />
       <updated>1607458388342</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL؜٠٠٠٢٢" summary="commit">
+      <created>1607458927505</created>
+      <option name="number" value="LOCAL؜٠٠٠٢٢" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٢٢" />
+      <updated>1607458927505</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

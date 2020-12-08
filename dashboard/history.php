@@ -60,7 +60,8 @@ if(isset($_SESSION['ID'])){
         <div class="col-md-9">
           <div class="container-fluid">
             <h1 class="text-center mt-4 mb-1 h-his">Subject In All Terms</h1><small class="text-center d-block mb-3 history-pr">You Will Find Here All Subjects In All Terms</small>
-              <?php for ($i=since($_SESSION['ID']);$i<=year();$i++){
+              <?php $since=since($_SESSION['ID']);
+              for ($i=$since[0];$i<=year();$i++){
                     for ($j=1;$j<=2;$j++){
                        echo '<h5 class="text-center mb-2">'.$j.' Term In '.$i.'</h5>
                                 <div class="table-responsive table-history mb-2">
