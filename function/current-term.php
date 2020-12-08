@@ -16,8 +16,7 @@ function getCurrent($studentId,$term,$year){
                                 AND
                                 register.year=?
                                 AND
-                                register.id_student=?
-                                                   
+                                register.id_student=?                       
                             ");
     $stmt->execute(array($term,$year,$studentId));
     return $stmt->fetchAll();

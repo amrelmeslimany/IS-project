@@ -3,7 +3,9 @@ session_start();
 if(isset($_SESSION['ID'])){
 include '../function/profileGetData.php';
 include '../function/gpaAndScore.php';
-$row=getDataFromStudentTable($_SESSION['ID'])
+include '../function/getFeildCourse.php';
+$row=getDataFromStudentTable($_SESSION['ID']);
+$feilds=getfaildCourse($_SESSION['ID']);
 ?>
 
 <!DOCTYPE html>
@@ -68,7 +70,7 @@ $row=getDataFromStudentTable($_SESSION['ID'])
                     <h1 class="mt-4">Your Profile</h1><small class="text-center d-block header-profile">Edit Your Profile From This Page</small>
 
                     <div class="change-data-self mt-4 mb-4">
-                        <form class="form-profile clearfix">
+                        <form class="form-profile clearfix" action="../function/profileSendData.php" method="post">
                             <div class="change-img">
                                 <div class="avatar-upload">
                                     <div class="avatar-edit">
@@ -106,9 +108,16 @@ $row=getDataFromStudentTable($_SESSION['ID'])
                                     <label for="dep"><i class="fas fa-list-alt mr-1"></i>Department</label>
                                     <input class="form-control" type="text" name="dep" readonly value="<?php echo $row['StdDpart']; ?>">
                                 </div>
+
                                 <div class="form-group col-md-6">
                                     <label for="segSub"><i class="fas fa-frown mr-1"></i>Segment Subject</label>
-                                    <input class="form-control" name="segSub" readonly value="CS201,PM320,TW323">
+                                    <input class="form-control" name="segSub" readonly value="<?php foreach ($feilds as $feild) {
+                                        if ($feild['score'] <= 45 && $feild['score'] >0) {
+                                            echo $feild['code'] . " , ";
+
+                                        }
+                                    }
+                                    ?>">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="email"><i class="fas fa-envelope mr-1"></i> Email</label>
@@ -118,9 +127,9 @@ $row=getDataFromStudentTable($_SESSION['ID'])
                             <div class="form-group">
                                 <label for="password"><i class="fas fa-lock mr-1"></i> Change Password</label>
                                 <input type="hidden" name="oldPass" value="<?php echo $row['Password']; ?>">
-                                <input class="form-control" type="password" name="password" minlength="8">
+                                <input class="form-control" type="password" name="Password" minlength="8">
                             </div>
-                            <button class="btn submit clearfix"><i class="fas fa-paper-plane mr-2"></i><span>Save Changes</span></button><a class="btn regist-pg float-right" href="register.php"><i class="fas fa-file-medical mr-2"></i><span>Register</span></a>
+                            <button class="btn submit clearfix" type="submit"><i class="fas fa-paper-plane mr-2"></i><span>Save Changes</span></button><a class="btn regist-pg float-right" href="register.php"><i class="fas fa-file-medical mr-2"></i><span>Register</span></a>
                         </form>
                     </div>
                 </div>
