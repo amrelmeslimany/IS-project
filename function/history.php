@@ -27,5 +27,6 @@ function since($id){
                                 code=?
                            ");
     $stmt->execute(array($id));
-    return $row = $stmt -> fetchall();
+    return $row = $stmt -> fetch();
 }
+print_r(since(1));
