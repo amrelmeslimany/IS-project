@@ -21,8 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc9f995-7c3a-48eb-b467-7a0dd6887111" name="Default Changelist" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/contactDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/contactDB.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <workItem from="1607335456405" duration="11178000" />
       <workItem from="1607356436951" duration="5643000" />
       <workItem from="1607412610470" duration="1997000" />
-      <workItem from="1607416018681" duration="9349000" />
+      <workItem from="1607416018681" duration="9804000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="commit 2">
       <created>1606924196649</created>
@@ -189,7 +188,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٢٠" />
       <updated>1607457454597</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL؜٠٠٠٢١" summary="commit">
+      <created>1607458388342</created>
+      <option name="number" value="LOCAL؜٠٠٠٢١" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٢١" />
+      <updated>1607458388342</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,11 +238,11 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="13" y="9" key="SettingsEditor/0.0.1024.728@0.0.1024.728" timestamp="1607361566399" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1607457459887">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1607458438699">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="186" y="65" key="Vcs.Push.Dialog.v2/0.0.1024.728@0.0.1024.728" timestamp="1607361647202" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607457459887" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607458438699" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607198729397">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
