@@ -38,8 +38,8 @@ $feilds=getfaildCourse($_SESSION['ID']);
             <div class="row">
                 <div class="col-4">
                     <div class="pic-user">
-                        <a class="username-img-text" href="profile.php"><img class="img-fluid rounded-circle mr-2" src="https://w7.pngwing.com/pngs/980/886/png-transparent-male-portrait-avatar-computer-icons-icon-design-avatar-flat-face-icon-people-head-cartoon-thumbnail.png" alt="avataruser">
-                            <small class="username-text">Username </small>
+                        <a class="username-img-text" href="profile.php"><img class="img-fluid rounded-circle mr-2" src="<?php echo $row['img'];?>" alt="avataruser">
+                            <small class="username-text"><?php echo $row['name'];?></small>
                         </a>
                     </div>
                 </div>
@@ -59,6 +59,8 @@ $feilds=getfaildCourse($_SESSION['ID']);
                 <li><a class="link-item" href="register.php">register</a></li>
                 <li><a class="link-item" href="current-term.php">current-term</a></li>
                 <li><a class="link-item" href="history.php">history</a></li>
+                <li><a class="link-item" href="logout.php">logout</a></li>
+
             </ul>
         </div><img class="tringle" src="assets/decorations/tri-01.svg">
     </main>
@@ -70,7 +72,7 @@ $feilds=getfaildCourse($_SESSION['ID']);
                     <h1 class="mt-4">Your Profile</h1><small class="text-center d-block header-profile">Edit Your Profile From This Page</small>
 
                     <div class="change-data-self mt-4 mb-4">
-                        <form class="form-profile clearfix" action="../function/profileSendData.php" method="post">
+                        <form class="form-profile clearfix" action="../function/profileSendData.php" method="post" enctype="multipart/form-data">
                             <div class="change-img">
                                 <div class="avatar-upload">
                                     <div class="avatar-edit">
@@ -112,7 +114,7 @@ $feilds=getfaildCourse($_SESSION['ID']);
                                 <div class="form-group col-md-6">
                                     <label for="segSub"><i class="fas fa-frown mr-1"></i>Segment Subject</label>
                                     <input class="form-control" name="segSub" readonly value="<?php foreach ($feilds as $feild) {
-                                        if ($feild['score'] <= 45 && $feild['score'] >0) {
+                                        if ($feild['score'] <= 45 && $feild['score'] > 0) {
                                             echo $feild['code'] . " , ";
 
                                         }

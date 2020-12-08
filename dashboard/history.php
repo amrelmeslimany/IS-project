@@ -49,6 +49,8 @@ if(isset($_SESSION['ID'])){
           <li><a class="link-item" href="register.php">register</a></li>
           <li><a class="link-item" href="current-term.php">current-term</a></li>
           <li><a class="link-item" href="history.php">history</a></li>
+            <li><a class="link-item" href="logout.php">logout</a></li>
+
         </ul>
       </div><img class="tringle" src="assets/decorations/tri-01.svg">
     </main>
