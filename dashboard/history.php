@@ -77,17 +77,16 @@ if(isset($_SESSION['ID'])){
 ';
                         $rows=getCurrent($_SESSION['ID'],term1($j),$i);
                         foreach ($rows as $row){
-                            if ($row['score']==-1){
-                                continue;
-                            }
-                            echo '
+                            if ($row['score']!=-1) {
+                                echo '
                                   <tr> 
-                                    <td class="text-uppercase">'.$row['name'].'</td>
-                                    <td>'.$row['code'].'</td>
-                                    <td>'.$row['hours'].'</td>
-                                    <td>'.$row['department'].'</td>
-                                     <td>'.$row['score'].'</td>
+                                    <td class="text-uppercase">' . $row['name'] . '</td>
+                                    <td>' . $row['code'] . '</td>
+                                    <td>' . $row['hours'] . '</td>
+                                    <td>' . $row['department'] . '</td>
+                                     <td>' . $row['score'] . '</td>
                                   </tr>';
+                            }
                         }
                         echo '</thead>
                         </table>
