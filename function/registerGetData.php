@@ -30,3 +30,15 @@ function getLevel($id){
     return $level['level'];
 
 }
+function lastSubject($id){
+    include 'contactDB.php';
+    $stmt = $con->prepare("SELECT 
+                                id_course
+                            FROM 
+                                register 
+                           WHERE
+                               id_student = ?
+                           ");
+    $stmt->execute(array($id));
+     return $stmt -> fetchall();
+}

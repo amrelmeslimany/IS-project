@@ -22,9 +22,9 @@
   <component name="ChangeListManager">
     <list default="true" id="acc9f995-7c3a-48eb-b467-7a0dd6887111" name="Default Changelist" comment="9/12/2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function/contactDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/contactDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/profileSendData.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/profileSendData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/registerGetData.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/registerGetData.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <workItem from="1607356436951" duration="5643000" />
       <workItem from="1607412610470" duration="1997000" />
       <workItem from="1607416018681" duration="10897000" />
-      <workItem from="1607503658061" duration="6785000" />
+      <workItem from="1607503658061" duration="12837000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="commit 2">
       <created>1606924196649</created>
@@ -228,7 +228,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٢٦" />
       <updated>1607508486970</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL؜٠٠٠٢٧" summary="9/12/2020">
+      <created>1607513322945</created>
+      <option name="number" value="LOCAL؜٠٠٠٢٧" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٢٧" />
+      <updated>1607513322945</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,11 +283,11 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="13" y="9" key="SettingsEditor/0.0.1024.728@0.0.1024.728" timestamp="1607361566399" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1607508491976">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1607513333412">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="186" y="65" key="Vcs.Push.Dialog.v2/0.0.1024.728@0.0.1024.728" timestamp="1607361647202" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607508491976" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607513333412" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607198729397">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

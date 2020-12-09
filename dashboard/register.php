@@ -6,6 +6,7 @@ include '../function/profileGetData.php';
 $profile=getDataFromStudentTable($_SESSION['ID']);
 $level=getLevel($_SESSION['ID']);
 $rows=getData($level);
+$lasts=lastSubject($_SESSION['ID']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,28 +82,28 @@ $rows=getData($level);
                       </tr>
                     </thead>
                     <tbody class="body-rable-rgs">
-                    <?php  foreach ($rows as $row) {
-                        if ($row['score']>=45 or $row['required']=="0"){
-
-                          echo "<tr>" ;
-                          echo "<td class='text-uppercase'>";
-                          echo $row['name'];
-                          echo "</td>";
-                          echo "<td class='text-uppercase'>";
-                          echo $row['code'];
-                          echo "</td>";
-                          echo "<td class='text-uppercase'>";
-                          echo $row['Credithours'];
-                          echo " </td>";
-                          echo "<td class='text-uppercase'>";
-                          echo $row['codpart'];
-                          echo " </td>";
-                              echo "<td>
-                              <input class='choose-subject' type='checkbox' value='" . $row['code'] . "' name='select[]'>
-                            </td>
-                          </tr>";
+                    <?php
+                    foreach ($rows as $row) {
+                           if ($row['score'] >= 45 or $row['required'] == "0") {
+                                echo "<tr>";
+                                echo "<td class='text-uppercase'>";
+                                echo $row['name'];
+                                echo "</td>";
+                                echo "<td class='text-uppercase'>";
+                                echo $row['code'];
+                                echo "</td>";
+                                echo "<td class='text-uppercase'>";
+                                echo $row['Credithours'];
+                                echo " </td>";
+                                echo "<td class='text-uppercase'>";
+                                echo $row['codpart'];
+                                echo " </td>";
+                                echo "<td>
+                                              <input class='choose-subject' type='checkbox' value='" . $row['code'] . "' name='select[]'>
+                                            </td>
+                                          </tr>";
+                            }
                         }
-                      }
                       ?>
                     </tbody>
                   </table>
