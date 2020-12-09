@@ -147,17 +147,6 @@ $feilds=getfaildCourse($_SESSION['ID']);
                         <h3 class="mb-4">Helps</h3>
                         <ul class="list-unstyled helps-self">
                             <li class="bx-hp p-1">
-                                <h5 class="pt-2">To Change Username!</h5>
-                                <p>&#8658; Username must start with letters:
-                                    <br>EX: <small class="alert-success pl-1 pr-1">right</small> hakrm45
-                                    <br>EX: <small class="alert-danger pl-1 pr-1">wrong</small> 45hakrm
-                                </p>
-                                <p>&#8658; Username must be more than 2 letters:
-                                    <br>EX: <small class="alert-success pl-1 pr-1">right</small> hakrm
-                                    <br>EX: <small class="alert-danger pl-1 pr-1">wrong</small> ha
-                                </p>
-                            </li>
-                            <li class="bx-hp p-1">
                                 <h5 class="pt-2">To Change Password!</h5>
                                 <p>&#8658; Password must be more than 8 letter:
                                     <br>EX: <small class="alert-success pl-1 pr-1">right</small> Hacker786
