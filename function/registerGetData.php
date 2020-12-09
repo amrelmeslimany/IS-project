@@ -3,7 +3,7 @@ function getData($level)
 {
     include 'contactDB.php';
     $stmt = $con->prepare("SELECT 
-                                course.name,course.code,course.Credithours,department.name AS 'codpart',course.Prerequisite_code as 'required',register.score
+                                course.name,course.code,course.Credithours,department.name AS 'codpart',course.Prerequisite_code ,register.score
                             FROM 
                                ( course INNER JOIN department ON course.department = department.code)
                                left JOIN register ON course.Prerequisite_code = register.id_course

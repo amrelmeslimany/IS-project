@@ -6,7 +6,7 @@ include '../function/profileGetData.php';
 $profile=getDataFromStudentTable($_SESSION['ID']);
 $level=getLevel($_SESSION['ID']);
 $rows=getData($level);
-$lasts=lastSubject($_SESSION['ID']);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -84,7 +84,7 @@ $lasts=lastSubject($_SESSION['ID']);
                     <tbody class="body-rable-rgs">
                     <?php
                     foreach ($rows as $row) {
-                           if ($row['score'] >= 45 or $row['required'] == "0") {
+                           if ($row['Prerequisite_code'] == "0") {
                                 echo "<tr>";
                                 echo "<td class='text-uppercase'>";
                                 echo $row['name'];
@@ -103,6 +103,26 @@ $lasts=lastSubject($_SESSION['ID']);
                                             </td>
                                           </tr>";
                             }
+                        if ($row['Prerequisite_code'] != "0" && $row['score']>=45 ) {
+                            echo "<tr>";
+                            echo "<td class='text-uppercase'>";
+                            echo $row['name'];
+                            echo "</td>";
+                            echo "<td class='text-uppercase'>";
+                            echo $row['code'];
+                            echo "</td>";
+                            echo "<td class='text-uppercase'>";
+                            echo $row['Credithours'];
+                            echo " </td>";
+                            echo "<td class='text-uppercase'>";
+                            echo $row['codpart'];
+                            echo " </td>";
+                            echo "<td>
+                                              <input class='choose-subject' type='checkbox' value='" . $row['code'] . "' name='select[]'>
+                                            </td>
+                                          </tr>";
+                        }
+
                         }
                       ?>
                     </tbody>
