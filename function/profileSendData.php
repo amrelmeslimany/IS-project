@@ -32,5 +32,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 }
+header('location:../dashboard/profile.php');
 ob_end_flush();
 
