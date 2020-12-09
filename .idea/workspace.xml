@@ -21,9 +21,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc9f995-7c3a-48eb-b467-7a0dd6887111" name="Default Changelist" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/current-term.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/current-term.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function/contactDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/contactDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/function/history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-in/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/log-in/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,8 @@
       <workItem from="1607335456405" duration="11178000" />
       <workItem from="1607356436951" duration="5643000" />
       <workItem from="1607412610470" duration="1997000" />
-      <workItem from="1607416018681" duration="10131000" />
+      <workItem from="1607416018681" duration="10897000" />
+      <workItem from="1607503658061" duration="1466000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="commit 2">
       <created>1606924196649</created>
@@ -202,7 +207,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٢٢" />
       <updated>1607458927505</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL؜٠٠٠٢٣" summary="commit">
+      <created>1607459278613</created>
+      <option name="number" value="LOCAL؜٠٠٠٢٣" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٢٣" />
+      <updated>1607459278613</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,11 +257,11 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="13" y="9" key="SettingsEditor/0.0.1024.728@0.0.1024.728" timestamp="1607361566399" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1607458438699">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1607459283932">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="186" y="65" key="Vcs.Push.Dialog.v2/0.0.1024.728@0.0.1024.728" timestamp="1607361647202" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607458438699" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607459283932" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607198729397">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -38,12 +38,16 @@ $feilds=getfaildCourse($_SESSION['ID']);
             <div class="row">
                 <div class="col-4">
                     <div class="pic-user">
-                        <a class="username-img-text" href="profile.php"><img class="img-fluid rounded-circle mr-2" src="<?php echo $row['img'];?>" alt="avataruser">
+                        <a class="username-img-text" href="profile.php">
+                            <img class="img-fluid rounded-circle mr-2" src="<?php echo $row['img'];?>" alt="avataruser">
                             <small class="username-text"><?php echo $row['name'];?></small>
                         </a>
                     </div>
                 </div>
-                <div class="col-4"><img class="text-center ml-auto mr-auto d-block" src="assets/logomain.png" width="30px" height="30px"></div>
+                <div class="col-4">
+                    <img class="text-center ml-auto mr-auto d-block" src="assets/logomain.png" width="30px" height="30px">
+                </div>
+
                 <div class="col-4">
                     <div class="list-links-bar text-right"><i class="fas fa-bars"></i></div>
                 </div>
@@ -186,5 +190,7 @@ $feilds=getfaildCourse($_SESSION['ID']);
 
 </html>
 <?php
+}else{
+    header("location:../index.php");
 }
 ?>

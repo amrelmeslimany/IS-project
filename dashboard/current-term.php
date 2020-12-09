@@ -3,6 +3,8 @@ session_start();
 if(isset($_SESSION['ID'])){
 include '../function/current-term.php';
 include '../function/termAndYear.php';
+include '../function/profileGetData.php';
+$profile=getDataFromStudentTable($_SESSION['ID']);
 $rows=getCurrent($_SESSION['ID'],term(),year());
 ?>
 <!DOCTYPE html>
@@ -31,9 +33,14 @@ $rows=getCurrent($_SESSION['ID'],term(),year());
     <nav class="main-nav">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-4">   
-            <div class="pic-user"><a class="username-img-text" href="profile.php"><img class="img-fluid rounded-circle mr-2" src="https://w7.pngwing.com/pngs/980/886/png-transparent-male-portrait-avatar-computer-icons-icon-design-avatar-flat-face-icon-people-head-cartoon-thumbnail.png" alt="avataruser"><small class="username-text">Username            </small></a></div>
-          </div>
+           <div class="col-4">
+                <div class="pic-user">
+                    <a class="username-img-text" href="profile.php"><img class="img-fluid rounded-circle mr-2" src="<?php echo $profile['img'];?>" alt="avataruser">
+                        <small class="username-text"><?php echo $profile['name'];?></small>
+
+                    </a>
+                </div>
+           </div>
           <div class="col-4"><img class="text-center ml-auto mr-auto d-block" src="assets/logomain.png" width="30px" height="30px"></div>
           <div class="col-4">
             <div class="list-links-bar text-right"><i class="fas fa-bars"></i></div>
@@ -128,5 +135,7 @@ $rows=getCurrent($_SESSION['ID'],term(),year());
   </body>
 </html>
 <?php
+}else{
+    header("location:../index.php");
 }
 ?>
