@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['ID'])){
-    header('location:dashboard/profile.php');
+    header('location:../dashboard/profile.php');
 }else{
 ?>
 <!doctype html>

@@ -82,7 +82,7 @@ $rows=getData($level);
                     </thead>
                     <tbody class="body-rable-rgs">
                     <?php  foreach ($rows as $row) {
-                        if ($row['score']>=45 ||$row['required']=="" ){
+                        if ($row['score']>=45 or $row['required']=="0"){
 
                           echo "<tr>" ;
                           echo "<td class='text-uppercase'>";
