@@ -3,9 +3,10 @@ function getData($level)
 {
     include 'contactDB.php';
     $stmt = $con->prepare("SELECT 
-                                course.name,course.code,course.Credithours,department.name AS 'codpart'
+                                course.name,course.code,course.Credithours,department.name AS 'codpart',course.Prerequisite_code as 'required',register.score
                             FROM 
-                                course INNER JOIN department ON course.department = department.code
+                               ( course INNER JOIN department ON course.department = department.code)
+                               INNER JOIN register ON course.Prerequisite_code = register.id_course
                                 
                            WHERE
                                course.level = ?
@@ -13,8 +14,6 @@ function getData($level)
     $stmt->execute(array($level));
     return $stmt->fetchAll();
 }
-
-
 
 function getLevel($id){
     include 'contactDB.php';

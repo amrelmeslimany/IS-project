@@ -82,32 +82,27 @@ $rows=getData($level);
                     </thead>
                     <tbody class="body-rable-rgs">
                     <?php  foreach ($rows as $row) {
-                      echo "<tr>" ;
-                      echo "<td class='text-uppercase'>";
-                      echo $row['name'];
-                      echo "</td>";
-                      echo "<td class='text-uppercase'>";
-                      echo $row['code'];
-                      echo "</td>";
-                      echo "<td class='text-uppercase'>";
-                      echo $row['Credithours'];
-                      echo " </td>";
-                      echo "<td class='text-uppercase'>";
-                      echo $row['codpart'];
-                      echo " </td>";
-                      if (date('m') == 9 |date('m') == 10 |date('m') == 1 |date('m') == 12) {
-                          echo "<td>
-                          <input class='choose-subject' type='checkbox' value='" . $row['code'] . "' name='select[]'>
-                        </td>
-                      </tr>";
-                      }else{
-                          echo "<td>
-                                    <h6 class='text-center'>can't register now</h6>
-                                </td>
-                      </tr>";
-                      }
-                     }
+                        if ($row['score']>=45 ||$row['required']=="" ){
 
+                          echo "<tr>" ;
+                          echo "<td class='text-uppercase'>";
+                          echo $row['name'];
+                          echo "</td>";
+                          echo "<td class='text-uppercase'>";
+                          echo $row['code'];
+                          echo "</td>";
+                          echo "<td class='text-uppercase'>";
+                          echo $row['Credithours'];
+                          echo " </td>";
+                          echo "<td class='text-uppercase'>";
+                          echo $row['codpart'];
+                          echo " </td>";
+                              echo "<td>
+                              <input class='choose-subject' type='checkbox' value='" . $row['code'] . "' name='select[]'>
+                            </td>
+                          </tr>";
+                        }
+                      }
                       ?>
                     </tbody>
                   </table>
