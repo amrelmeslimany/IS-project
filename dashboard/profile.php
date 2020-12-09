@@ -76,7 +76,7 @@ $feilds=getfaildCourse($_SESSION['ID']);
                     <h1 class="mt-4">Your Profile</h1><small class="text-center d-block header-profile">Edit Your Profile From This Page</small>
 
                     <div class="change-data-self mt-4 mb-4">
-                        <form class="form-profile clearfix" action="../function/profileSendData.php" method="post" enctype="multipart/form-data">
+                        <form class="form-profile clearfix"  action="../function/profileSendData.php" method="post" enctype="multipart/form-data">
                             <div class="change-img">
                                 <div class="avatar-upload">
                                     <div class="avatar-edit">
@@ -135,7 +135,8 @@ $feilds=getfaildCourse($_SESSION['ID']);
                                 <input type="hidden" name="oldPass" value="<?php echo $row['Password']; ?>">
                                 <input class="form-control" type="password" name="Password" minlength="8">
                             </div>
-                            <button class="btn submit clearfix" type="submit"><i class="fas fa-paper-plane mr-2"></i><span>Save Changes</span></button><a class="btn regist-pg float-right" href="register.php"><i class="fas fa-file-medical mr-2"></i><span>Register</span></a>
+                            <button class="btn submit clearfix" type="submit" ><i class="fas fa-paper-plane mr-2"></i><span>Save Changes</span></button>
+                            <a class="btn regist-pg float-right" href="register.php"><i class="fas fa-file-medical mr-2"></i><span>Register</span></a>
                         </form>
                     </div>
                 </div>

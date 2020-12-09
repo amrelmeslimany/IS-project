@@ -6,26 +6,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $id = $_SESSION["ID"];
 
-    $F1  = $_POST['img'];
-        //upload and save image in database
-    if (is_uploaded_file($F1)) {
-        $ImageT = time();
-        move_uploaded_file($F1, "../data/$ImageT");
-        $instr = fopen("../data/$ImageT", "rb");
-        $image = addslashes(fread($instr, filesize("../data/$ImageT")));
-        unlink("../data/$ImageT");
 
-        echo '<img src="' . $image . '"';
-    }
+    $targetDir = "../data/";
 
-    $pass = '';
-    if (empty($_POST['Password'])) {
-        $pass = $_POST['oldPass'];
-    } else {
-        $pass = sha1($_POST['Password']);
+    $fileName = basename($_FILES["file"]["name"], date());
+
+    $targetFilePath = $targetDir . $fileName;
+
+    $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+
+    $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
+
+    if (in_array($fileType, $allowTypes)) {
+
+        if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
+
+            $pass = '';
+            if (empty($_POST['Password'])) {
+                $pass = $_POST['oldPass'];
+            } else {
+                $pass = sha1($_POST['Password']);
+            }
+            $stmt = $con->prepare("UPDATE student SET password= ?,img=? WHERE id = ?");
+            $stmt->execute(array($pass,$targetFilePath, $id));
+        }
     }
-    $stmt = $con->prepare("UPDATE student SET password= ? WHERE id = ?");
-    $stmt->execute(array($pass, $id));
 }
 ob_end_flush();
 
